@@ -5,47 +5,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />    
     <title>CoLab</title>
 
-<!-- CSS -->
-<link rel="stylesheet" href="Frontend/style.css" />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-<link href="https://fonts.googleapis.com/css2?family=PT+Serif&display=swap" rel="stylesheet">
-
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif&display=swap" rel="stylesheet">
 </head>
+
 <body>
+
 <!-- Header/Navbar -->
 <section class="header">
   <nav>
-    <a href="index.html" class="logo"><img src="/images/CoLab.png" alt="CoLab Logo"><span>CoLab</span></a>
+    <a href="index.html" class="logo">
+        <img src="/images/CoLab.png" alt="CoLab Logo">
+        <span>CoLab</span>
+    </a>
+
     <div class="nav-links" id="navLinks">
-       <i class="fa-solid fa-xmark" onclick="hideMenu()" role="button" tabindex="0" aria-label="Close menu"></i>
-      <ul>
-        <li><a href="index.html" class="active">HOME</a></li>
-        <li><a href="About-Us.html">ABOUT US</a></li>
-        <li><a href="event-page.html">EVENTS</a></li>
-        <li><a href="faq.html">FAQ</a></li>
-        <li><a href="Join-Us.html">JOIN US</a></li>
-      </ul>
+        <i class="fa-solid fa-xmark close-icon" onclick="hideMenu()" aria-label="Close menu"></i>
+        <ul>
+            <li><a href="index.html" class="active">HOME</a></li>
+            <li><a href="About-Us.html">ABOUT US</a></li>
+            <li><a href="event-page.html">EVENTS</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="Join-Us.html">JOIN US</a></li>
+        </ul>
     </div>
-   <i class="fa-solid fa-bars" onclick="showMenu()" role="button" tabindex="0" aria-label="Open menu"></i>
+
+    <i class="fa-solid fa-bars menu-icon" onclick="showMenu()" aria-label="Open menu"></i>
   </nav>
 
   <div class="text-box">
-    <h1>Welcome to SkillShift Club</h1>
-    <p>Explore Wushu, Netball, and Dragon Boat.<br>Build skills.  Discover your strengths.  Lead the way.</p>
-    <a href="event-page.html" class="hero-btn">See Upcoming Events</a>
+        <h1>Welcome to SkillShift Club</h1>
+        <p>Explore Wushu, Netball, and Dragon Boat.<br>Build skills. Discover your strengths. Lead the way.</p>
+        <a href="event-page.html" class="hero-btn">See Upcoming Events</a>
   </div>
 </section>
-<!-- JavaScript -->
+
+<!-- JavaScript for Menu -->
 <script>
-   var navLinks = document.getElementById("navLinks");
-   function showMenu(){
-    navLinks.classList.add("show");
-    document.body.classList.add("no-scroll");
-   }
-   function hideMenu(){
-    navLinks.classList.remove("show");
-    document.body.classList.remove("no-scroll");
-   }
+    const navLinks = document.getElementById("navLinks");
+
+    function showMenu() {
+        navLinks.classList.add("show");
+        document.body.classList.add("no-scroll");
+    }
+
+    function hideMenu() {
+        navLinks.classList.remove("show");
+        document.body.classList.remove("no-scroll");
+    }
 </script>
+
 </body>
 </html>
