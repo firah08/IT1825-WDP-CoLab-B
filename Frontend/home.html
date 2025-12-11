@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CoLab Home</title>
+
+  <!-- Font Awesome icons -->
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Page CSS -->
+  <link rel="stylesheet" href="css/home.css">
+</head>
+
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <header class="navbar">
+ 
+    <!-- Left: logo + nav links -->
+    <div class="nav-left">
+      <div class="logo">
+        <img src="/images/CoLab.png" alt="CoLab Logo">
+        <span>CoLab</span>
+      </div>
+
+      <nav class="main-nav">
+        <ul>
+          <li><a href="#" class="active"><i class="fa-regular fa-house"></i> Home</a></li>
+          <li><a href="#"><i class="fa-regular fa-calendar"></i> Activities</a></li>
+          <li><a href="#"><i class="fa-regular fa-square-plus"></i> Create Post</a></li>
+          <li><a href="#"><i class="fa-regular fa-message"></i> Messages</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- Right: search + profile -->
+    <div class="nav-right">
+
+      <div class="search-container">
+        <i class="fa-solid fa-magnifying-glass search-icon"></i>
+        <input type="text" class="search-input" placeholder="Search posts or users...">
+      </div>
+
+      <div class="profile-wrapper">
+        <img src="https://via.placeholder.com/40"
+             alt="Profile"
+             class="profile-btn">
+
+        <div class="profile-dropdown">
+          <a href="#">My Profile</a>
+          <a href="#">My Activities</a>
+          <a href="#">Settings</a>
+          <button class="logout-btn">Logout</button>
+        </div>
+      </div>
+
+    </div>
+
+  </header>
+
+  <!-- ===== MAIN CONTENT ===== -->
+  <main class="page-wrapper">
+
+    <!-- Stories row -->
+    <section class="stories-section">
+      <div class="story">
+        <div class="story-avatar your-story">+</div>
+        <span>Your Story</span>
+      </div>
+
+      <div class="story">
+        <div class="story-avatar"></div>
+        <span>Aunty Mei</span>
+      </div>
+
+      <div class="story">
+        <div class="story-avatar"></div>
+        <span>Farhan</span>
+      </div>
+
+      <div class="story">
+        <div class="story-avatar"></div>
+        <span>Mr Lim</span>
+      </div>
+    </section>
+
+    <!-- Welcome text -->
+    <section class="welcome-section">
+      <h1>Welcome back, Mushfira!</h1>
+    </section>
+
+    <!-- Single centered post -->
+    <section class="feed-section">
+      <article class="post-card">
+
+        <header class="post-header">
+          <div class="post-user">
+            <div class="post-avatar"></div>
+            <div>
+              <div class="post-username">UserName</div>
+              <div class="post-time">Posted X hours ago</div>
+            </div>
+          </div>
+          <button class="post-menu" aria-label="More options">•••</button>
+        </header>
+
+        <div class="post-media"></div>
+
+        <div class="post-actions">
+          <button>♡ Like</button>
+          <button>💬 Comment</button>
+          <button>↗ Share</button>
+        </div>
+
+        <p class="post-caption">
+          This is a caption placeholder for the post. Replace with real content later.
+        </p>
+
+      </article>
+    </section>
+
+  </main>
+
+  <!-- JS (can stay empty for now) -->
+  <script src="js/home.js"></script>
+</body>
+</html>
+
